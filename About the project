@@ -1,0 +1,21 @@
+Description: A D flip-flop, or data flip-flop, is a type of digital memory circuit used to store one bit of data. It captures the value of the D (data) input at a specific instance when controlled by a clock edge (posedge or negedge) and outputs this value until the next clock edge. This makes D flip-flops fundamental in timing applications and sequential logic circuits.
+
+
+Coding Used: System Verilog and Universal Verification Methodology (UVM)
+
+
+Tool Used: Vivado Simulator
+
+
+Project Outcomes: 
+
+1. I explored how to set the virtual interface using uvm_config_db::set() in the testbench top and retrieve it using uvm_config_db::get() in the build_phase of the driver and monitor.
+
+2. I learned how to print the testbench topology using uvm_top.print_topology().
+
+3. I studied agent configuration, including declaring the agent type with uvm_active_passive_enum in the agent_config class. I set it in the test class using uvm_config_db::set() and retrieved it in the agent's build_phase using uvm_config_db::get(). Based on the agent_type, I created memory for the driver and sequencer class handles. 
+
+4. I learned how to perform scoreboard comparisons to compare the actual and expected outputs of our D flip-flop.
+
+
+Conclusion: The D flip-flop is working fine as per its functionality. Checked with Reset LOW and HIGH.
